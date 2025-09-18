@@ -2,6 +2,7 @@
 
 Website institucional desenvolvido para a loja **Macre Materiais de Construção**, com foco em design moderno, responsividade e interatividade.
 
+
 ---
 
 ## ✨ Funcionalidades
@@ -20,6 +21,16 @@ Website institucional desenvolvido para a loja **Macre Materiais de Construção
 - **HTML5** → Estrutura semântica da página  
 - **CSS3** → Estilização, variáveis de cores, responsividade e animações  
 - **JavaScript (Vanilla)** → Lógica do carrossel e interação com o widget do WhatsApp  
+
+---
+
+---
+
+## Progeto criativo
+
+- **desinig**→ Todo os desing de pagina foi desenvolvidao para atrair atenção dos usuatios e facilitar a compreenção e intuito da funcionalidade do mesmo
+- **imgens** → Todas as imagens criadas por mim utilizando de ferramentas e sistema como (fire alphaca, chatgpt,canva ) 
+- **cores** → todos as cores foram pensadas para atrair visualmente usuario e segundo relaçoes da psicologia das cores
 
 ---
 

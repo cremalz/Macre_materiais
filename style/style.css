@@ -395,13 +395,25 @@ header {
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.3s ease;
+  pointer-events: none; /* evita clique quando invisível */
+}
+
+/* animação de aparição */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .whatsapp-chat.show {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
+  animation: fadeInUp 0.4s ease forwards;
+  pointer-events: auto;
 }
 
 .whatsapp-chat p {
@@ -422,6 +434,7 @@ header {
 }
 
 .chat-btn:hover {
+  transform: scale(1,1.05);
   background-color: #1ebe57;
 }
 

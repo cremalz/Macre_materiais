@@ -1,0 +1,51 @@
+.procura{
+ text-align: center;
+ margin: 1.8em 2em;   
+}
+
+
+.icones__lista{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1em;
+  padding: 1em 0;
+  justify-items: center;
+}
+
+
+
+
+.procura__titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top:1em ;
+}
+
+.procura__texto{
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    margin-top: 0.5em;
+    text-align: center;
+    
+}
+
+
+.icones__item{
+   background-color: var(--azul);
+  color: var(--branco);
+  padding: 1em;
+  border-radius: 8px;
+  width: 60%; /* ocupa o espaço da coluna */
+  max-width: 150px;
+  padding: 1.2em 1em
+  
+}
+
+
+
+
+
+
+

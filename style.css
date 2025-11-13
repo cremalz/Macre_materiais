@@ -1,0 +1,25 @@
+@import url("styles/topo.css");
+@import url("styles/procura.css");
+
+
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #F3F3F3;
+    --laranja: #EB891B;
+    --azul: #536580;
+    --fonte-titulo: 'Belanosima', sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+
+    
+}
+
+body{
+    background-color: var(--branco);
+    font-family:var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 400;
+      text-align: center;
+}
+

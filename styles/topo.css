@@ -1,0 +1,25 @@
+.logo{
+    display: block;
+    margin: 20px auto;
+}
+
+.caixa{
+ text-align: center;
+ margin: 1.8em 2em;    
+}
+
+
+.caixa__titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    font-size: 20px;
+    
+}
+
+.caixa__texto{
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    margin-top: 0.5em;
+}
+
+

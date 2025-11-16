@@ -1,0 +1,47 @@
+.contato{
+ text-align: center;
+ margin: 1.8em 2em;    
+}
+
+
+.contato__titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top:1em ;
+}
+
+.contato__texto{
+    font-family: var(--fonte-padrao);
+    margin-top: 1em;
+    text-align: center;
+    
+}
+
+
+.contato__phone{
+   
+    font-family: var(--fonte-titulo);
+    color: var(--branco);
+    background-color: var(--laranja);
+    margin: 2em 5em;
+    padding: 0.5em;
+    border-radius: 16px;
+}
+
+.contato__ancora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.contato__ancora:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}   
+

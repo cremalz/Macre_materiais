@@ -6,8 +6,8 @@
 
 .icones__lista{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 1em;
+  grid-template-columns: repeat(2, 2fr); 
+  gap: 0.5em;
   padding: 1em 0;
   justify-items: center;
 }

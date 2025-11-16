@@ -1,0 +1,18 @@
+.entregas{
+ text-align: center;
+ margin: 1.8em 2em;    
+}
+
+
+.entregas__titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 300;
+    padding-top:1em ;
+}
+
+.entregas__texto{
+    font-family: var(--fonte-padrao);
+    margin-top: 1em;
+    text-align: center;}

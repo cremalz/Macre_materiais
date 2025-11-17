@@ -14,5 +14,6 @@
 
 .entregas__texto{
     font-family: var(--fonte-padrao);
-    margin-top: 1em;
-    text-align: center;}
+  
+    text-align: center;
+}

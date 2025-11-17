@@ -2,106 +2,124 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraBooks</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+ 
 </head>
 
 <body>
-    <img src="img/logo macre.svg" alt="Logo macre materiais de contrução" class="Logo">
+  <img src="img/logo macre.svg" alt="Logo macre materiais de contrução" class="Logo">
+
+
+
+<section class="carousel">
+  <div class="carousel__track">
+    <img src="banner/1.jpg" alt="Banner 1" class="carousel__img">
+    <img src="banner/2.jpg" alt="Banner 2" class="carousel__img">
+    <img src="banner/3.jpg" alt="Banner 3" class="carousel__img">
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel__btn carousel__btn--prev" aria-label="Slide anterior">&larr;</button>
+  <button class="carousel__btn carousel__btn--next" aria-label="Próximo slide">&rarr;</button>
+
+  <!-- Paginação (bullets) será gerada pelo JS -->
+  <div class="carousel__pagination" aria-hidden="false"></div>
+</section>
+
+
+  <section class="caixa">
+    <h2 class="caixa__titulo">Há mais de 25 Anos entregando excelência!</h2>
+    <p class="caixa__texto">Nos deixe fazer parte da sua historia,Começando pela sua obra.</p>
+  </section>
 
 
 
 
-    <section class="caixa">
-        <h2 class="caixa__titulo">Há mais de 25 Anos entregando excelência!</h2>
-        <p class="caixa__texto">Nos deixe fazer parte da sua historia,Começando pela sua obra.</p>
-    </section>
+  <section class="procura">
+    <h2 class="procura__titulo">Aqui temos exatamente o que você procura:</h2>
+    <h1 class="procura__texto">Seus projetos merecem os melhores materiais com
+      as melhores marcas e de mais alta qualidade </h1>
 
+    <div class="icones">
+      <ul class="icones__lista">
 
+        <li class="icones__item">
+          <img src="img/balde.svg" alt="Balde de tinta" class="icones__imagem">
+          <p class="icones__texto">Tintas</p>
+        </li>
 
+        <li class="icones__item">
+          <img src="img/piso.svg" alt="Pisos e porcelanatos" class="icones__imagem">
+          <p class="icones__texto">Pisos</p>
+        </li>
 
-    <section class="procura">
-         <h2 class="procura__titulo">Aqui temos exatamente o que você procura:</h2>
-         <h1 class="procura__texto">Seus projetos merecem os melhores materiais com 
-as melhores marcas e  de mais alta qualidade </h1>
+        <li class="icones__item">
+          <img src="img/cimento.svg" alt="Cimento" class="icones__imagem">
+          <p class="icones__texto">Cimento</p>
+        </li>
 
-<div class="icones">
-<ul class="icones__lista">
-    
-    <li class="icones__item">
-      <img src="img/balde.svg" alt="Balde de tinta" class="icones__imagem">
-      <p class="icones__texto">Tintas</p>
-    </li>
+        <li class="icones__item">
+          <img src="img/areia.svg" alt="Areia e Brita" class="icones__imagem">
+          <p class="icones__texto">Areia, Brita</p>
+        </li>
 
-     <li class="icones__item">
-      <img src="img/piso.svg" alt="Pisos e porcelanatos" class="icones__imagem">
-      <p class="icones__texto">Pisos</p>
-    </li>
+        <li class="icones__item">
+          <img src="img/tijolo.svg" alt="tijolos" class="icones__imagem">
+          <p class="icones__texto">Tijolos</p>
+        </li>
 
-     <li class="icones__item">
-      <img src="img/cimento.svg" alt="Cimento" class="icones__imagem">
-      <p class="icones__texto">Cimento</p>
-    </li>
+        <li class="icones__item">
+          <img src="img/ferro.svg" alt="Ferro" class="icones__imagem">
+          <p class="icones__texto">Ferro</p>
+        </li>
 
-     <li class="icones__item">
-      <img src="img/areia.svg" alt="Areia e Brita" class="icones__imagem">
-      <p class="icones__texto">Areia, Brita</p>
-    </li>
+        <li class="icones__item">
+          <img src="img/ferramenta.svg" alt="Ferramentas" class="icones__imagem">
+          <p class="icones__texto">Ferramentas</p>
+        </li>
 
-     <li class="icones__item">
-      <img src="img/tijolo.svg" alt="tijolos" class="icones__imagem">
-      <p class="icones__texto">Tijolos</p>
-    </li>
+        <li class="icones__item">
+          <img src="img/cano.svg" alt="Canos" class="icones__imagem">
+          <p class="icones__texto">Canos</p>
+        </li>
+      </ul>
 
-     <li class="icones__item">
-      <img src="img/ferro.svg" alt="Ferro" class="icones__imagem">
-      <p class="icones__texto">Ferro</p>
-    </li>
+    </div>
+  </section>
 
-     <li class="icones__item">
-      <img src="img/ferramenta.svg" alt="Ferramentas" class="icones__imagem">
-      <p class="icones__texto">Ferramentas</p>
-    </li>
+  <section class="contato">
+    <h2 class="contato__titulo">Atendimento</h2>
+    <img src="img/atendente.svg" alt="Imagem de atendente" class="contato__imagem">
+    <p class="contato__toxto">Entre em contato conosco para fazer um orçamento pelo número abaixo ou pelo WhatsApp.</p>
 
-     <li class="icones__item">
-      <img src="img/cano.svg" alt="Canos" class="icones__imagem">
-      <p class="icones__texto">Canos</p>
-    </li>
-</ul>
+    <div class="contato__phone">
+      <a href="" class="contato__ancora">
+        <img src="img/telefone.svg" alt="Imagem de telefone" class="contato__phone-icone">
+        <p>(51) 3250-6823</p>
+      </a>
 
-</div>
- </section>
- 
- <section class="contato">
- <h2 class="contato__titulo">Atendimento</h2>
- <img src="img/atendente.svg" alt="Imagem de atendente" class="contato__imagem">
- <p class="contato__toxto">Entre em contato conosco para fazer um orçamento pelo número abaixo ou pelo WhatsApp.</p>
+    </div>
+  </section>
 
- <div class="contato__phone">  
-<a href="" class="contato__ancora" >
-     <img src="img/telefone.svg" alt="Imagem de telefone" class="contato__phone-icone">
-    <p>(51) 3250-6823</p></a>
+  <section class="entregas">
 
- </div>
- </section>
- 
- <section class="entregas">
+    <h2 class="entregas__titulo">Entregas</h2>
 
-  <h2 class="entregas__titulo">Entregas</h2>
+    <img src="img/caminhao.svg" alt="Imagem ilustrativa de caminhão" class="Entregas__img">
 
-  <img src="img/caminhao.svg" alt="Imagem ilustrativa de caminhão" class="Entregas__img">
+    <p class="entregas__texto">Realizamos entregas rápidas e seguras em toda zona sul de Porto Alegre, garantindo que
+      seu pedido chegue com qualidade.</p>
 
-  <p class="entregas__texto">Realizamos entregas rápidas e seguras em toda zona sul de Porto Alegre, garantindo que seu pedido chegue com qualidade.</p>
+  </section>
 
- </section>
-
-
+<script src="script/banner.js" defer></script>
 
 </body>
 

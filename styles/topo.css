@@ -3,6 +3,100 @@
     margin: 20px auto;
 }
 
+/* CONTÊINER */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1em auto;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* TRACK e SLIDES */
+.carousel__track {
+  display: flex;
+  transition: transform 300ms ease;
+  will-change: transform;
+  touch-action: pan-y; /* permite scroll vertical e gestures horizontais para o carrossel */
+}
+
+.carousel__img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* BOTÕES (prev / next) */
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(255,255,255,0.92);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+
+.carousel__btn {
+  display: none; /* esconde setas no mobile */
+}
+
+.carousel__btn:active { transform: translateY(-50%) scale(0.98); }
+
+.carousel__btn--prev { left: 12px; }
+.carousel__btn--next { right: 12px; }
+
+/* PAGINATION (bullets) */
+.carousel__pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 25;
+}
+
+.carousel__bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  transition: transform .18s, background .18s;
+}
+
+.carousel__bullet[aria-current="true"] {
+  background: white;
+  transform: scale(1.25);
+}
+
+/* melhorar aparência em mobile */
+@media (max-width:520px) {
+  .carousel__img { height: 220px; }
+  .carousel__btn { width: 38px; height: 38px; }
+  .carousel__btn--prev { left: 8px; }
+  .carousel__btn--next { right: 8px; }
+}
+
+
+
 .caixa{
  text-align: center;
  margin: 1.8em 2em;    

@@ -75,7 +75,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.6);
+  background:var(--laranja);
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -83,7 +83,7 @@
 }
 
 .carousel__bullet[aria-current="true"] {
-  background: white;
+  background: var(--azul);
   transform: scale(1.25);
 }
 
@@ -113,6 +113,7 @@
 .caixa__texto{
     font-family: var(--fonte-padrao);
     font-size: 16px;
+     font-weight: 400;
     margin-top: 0.5em;
 }
 

@@ -26,6 +26,7 @@
 .procura__texto{
     font-family: var(--fonte-padrao);
     font-size: 16px;
+     font-weight: 400;
     margin-top: 0.5em;
     text-align: center;
     

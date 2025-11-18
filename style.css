@@ -2,6 +2,7 @@
 @import url("styles/procura.css");
 @import url("styles/atendimento.css");
 @import url("styles/entregas.css");
+@import url("styles/local.css");
 
 
 
@@ -22,6 +23,6 @@ body{
     font-family:var(--fonte-padrao);
     font-size: 16px;
     font-weight: 400;
-      text-align: center;
+    text-align: center;
 }
 

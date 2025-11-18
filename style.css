@@ -3,6 +3,7 @@
 @import url("styles/atendimento.css");
 @import url("styles/entregas.css");
 @import url("styles/local.css");
+@import url("styles/rodape.css");
 
 
 
@@ -11,6 +12,7 @@
     --branco: #F3F3F3;
     --laranja: #EB891B;
     --azul: #536580;
+    --azul-escuro:#0F172A;
     --fonte-titulo: 'Belanosima', sans-serif;
     --fonte-padrao: Arial, Helvetica, sans-serif;
 

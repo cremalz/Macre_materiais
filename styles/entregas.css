@@ -1,6 +1,6 @@
 .entregas{
  text-align: center;
- margin: 1.8em 2em;    
+ margin: 1.9em 2em;    
 }
 
 
@@ -15,6 +15,5 @@
 .entregas__texto{
     font-family: var(--fonte-padrao);
      font-weight: 400;
-  
     text-align: center;
 }

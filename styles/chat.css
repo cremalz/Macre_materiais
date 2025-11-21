@@ -1,0 +1,89 @@
+
+.whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-family: Arial, sans-serif;
+}
+
+/* Botão flutuante */
+.whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #25D366;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.whatsapp-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Mini chat */
+.whatsapp-chat {
+  display: none; /* esconde por padrão */
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none; /* evita clique quando invisível */
+}
+
+/* animação de aparição */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-chat.show {
+  display: block;
+  animation: fadeInUp 0.4s ease forwards;
+  pointer-events: auto;
+}
+
+.whatsapp-chat p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+/* Botão da conversa */
+.chat-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.chat-btn:hover {
+  transform: scale(1,1.05);
+  background-color: #1ebe57;
+}

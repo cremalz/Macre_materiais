@@ -15,6 +15,7 @@
 .contato__texto{
     font-family: var(--fonte-padrao);
     margin-top: 1em;
+        font-weight: 400;   
     text-align: center;
     
 }
@@ -52,3 +53,37 @@
     
 }
 
+
+
+
+@media screen and (min-width: 1024px){
+
+.contato{
+ text-align: center;
+ margin: 1.8em 9em;
+}
+
+.contato__titulo{
+    font-size: 60px;
+}
+
+.contato__texto{
+    font-size: 30px;
+}
+
+.contato__phone{
+
+    margin: 2em 5em;
+    padding: 1.2em;
+    border-radius: 16px;
+    font-size: 24px;
+}
+
+.contato__ancora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+}

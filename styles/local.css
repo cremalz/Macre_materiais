@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
 }
 
 .local__titulo{
@@ -56,4 +57,32 @@
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+.local{
+    text-align: center;
+ margin: 1.8em 9em;  
+}
+
+.local__titulo{
+    font-size: 60px;
+}
+
+.local__texto{
+    font-size: 30px;
+}
+
+.mapa-container {
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 19px;
+    overflow: hidden;
+}
+
 }

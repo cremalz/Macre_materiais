@@ -3,6 +3,10 @@
     margin: 20px auto;
 }
 
+.logo__big{
+  display: none;
+}
+
 /* CONTÊINER */
 .carousel {
   position: relative;
@@ -119,9 +123,31 @@
 
 
 @media screen and (min-width: 1024px){
-.logo{
+  .logo {
+    display: none;
+  }
+  .logo__big {
     display: block;
-     margin: 20px auto;
+    margin: 20px auto;
+  }
+
+.caixa{
+ text-align: center;
+ margin: 1.8em 9em;    
+}
+
+
+.caixa__titulo{
+font-size: 60px;
+}
+
+.caixa__texto{
+    font-size: 30px;
+}
+
+.caixa__imagem{
+    width: 30%;
+
 }
 
 

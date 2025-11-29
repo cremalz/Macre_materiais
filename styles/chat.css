@@ -87,3 +87,42 @@
   transform: scale(1,1.05);
   background-color: #1ebe57;
 }
+
+
+
+
+
+@media screen and (min-width: 1024px){
+
+.whatsapp-widget {
+  bottom: 40px;
+  right: 40px;
+}
+
+.whatsapp-btn {
+  width: 80px;
+  height: 80px;
+}
+
+.whatsapp-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-chat {
+  width: 320px;
+  padding: 20px;
+  bottom: 90px;
+}
+
+.whatsapp-chat p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.chat-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+}

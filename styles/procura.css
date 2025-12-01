@@ -53,20 +53,27 @@
 }
 
 
+.procura__titulo{
+    font-size: 36px;
+}
+
+.procura__texto{
+    font-size: 18px;
+}
+
+.procura__input{
+    margin: 2em 5em;
+    padding: 1.2em;
+    border-radius: 16px;
+    font-size: 18px;
+}
+
 .icones__lista{
   display: grid;
   grid-template-columns: repeat(3, 2fr); 
   gap: 5em;
   padding: 6em ;
   justify-items: center;
-}
-
-.procura__titulo{
-  font-size: 60px;
-}
-
-.procura__texto{
-  font-size: 30px;
 }
 
 .icones__item{
@@ -84,6 +91,5 @@
   width: 80px;
   height: 80px;
 }
-
 
 }

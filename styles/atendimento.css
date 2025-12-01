@@ -64,11 +64,11 @@
 }
 
 .contato__titulo{
-    font-size: 60px;
+    font-size: 36px;
 }
 
 .contato__texto{
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .contato__phone{
@@ -76,7 +76,7 @@
     margin: 2em 5em;
     padding: 1.2em;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .contato__ancora{

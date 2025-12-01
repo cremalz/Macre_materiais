@@ -1,9 +1,3 @@
-.entregas{
- text-align: center;
- margin: 1.9em 2em;    
-}
-
-
 .entregas__titulo{
     font-family: var(--fonte-titulo);
     color: var(--azul);
@@ -49,11 +43,11 @@
 }
 
 .entregas__titulo{
-    font-size: 60px;
+    font-size: 36px;
 }
 
 .entregas__texto{
-    font-size: 30px;
+    font-size: 18px;
 }
 
 }

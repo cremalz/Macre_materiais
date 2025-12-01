@@ -1,168 +1,74 @@
-// scripts/banner.js
-(function () {
-  const carousel = document.querySelector('.carousel');
-  if (!carousel) return;
+const slides = document.querySelectorAll('.carousel img');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const dotsContainer = document.querySelector('.dots');
+let index = 0;
+let interval;
 
-  const track = carousel.querySelector('.carousel__track');
-  const slides = Array.from(carousel.querySelectorAll('.carousel__img'));
-  const btnPrev = carousel.querySelector('.carousel__btn--prev');
-  const btnNext = carousel.querySelector('.carousel__btn--next');
-  const pagination = carousel.querySelector('.carousel__pagination');
+// Criar bolinhas dinamicamente
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dotsContainer.appendChild(dot);
+});
+const dots = document.querySelectorAll('.dots span');
 
-  let index = 0;
-  let startX = 0;
-  let currentTranslate = 0;
-  let prevTranslate = 0;
-  let isDragging = false;
-  let slideWidth = carousel.clientWidth;
-  const threshold = 60; // px para mudar de slide
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
 
-  // ---------- helpers ----------
-  function updateSize() {
-    slideWidth = carousel.clientWidth;
-    prevTranslate = -index * slideWidth;
-    setTransition(true);
-    setTranslate(prevTranslate);
-    updateButtons();
-    highlightBullet();
-  }
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+  index = i;
+}
 
-  function setTranslate(x) {
-    track.style.transform = `translateX(${x}px)`;
-  }
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
 
-  function setTransition(enable) {
-    track.style.transition = enable ? 'transform 300ms ease' : 'none';
-  }
+function prevSlideFunc() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
 
-  function goToSlide(i) {
-    index = Math.max(0, Math.min(i, slides.length - 1));
-    prevTranslate = -index * slideWidth;
-    setTransition(true);
-    setTranslate(prevTranslate);
-    updateButtons();
-    highlightBullet();
-  }
+// Auto-play
+function startAutoPlay() {
+  interval = setInterval(nextSlide, 15000);
+}
 
-  function nextSlide() { goToSlide(index + 1); }
-  function prevSlide() { goToSlide(index - 1); }
+function stopAutoPlay() {
+  clearInterval(interval);
+}
 
-  function updateButtons() {
-    if (!btnPrev || !btnNext) return;
-    btnPrev.disabled = index === 0;
-    btnNext.disabled = index === slides.length - 1;
-    btnPrev.style.opacity = btnPrev.disabled ? '0.55' : '1';
-    btnNext.style.opacity = btnNext.disabled ? '0.55' : '1';
-  }
+// Eventos
+next.addEventListener('click', () => {
+  stopAutoPlay();
+  nextSlide();
+  startAutoPlay();
+});
 
-  // ---------- pagination (bullets) ----------
-  function createPagination() {
-    if (!pagination) return;
-    pagination.innerHTML = '';
-    slides.forEach((_, i) => {
-      const btn = document.createElement('button');
-      btn.className = 'carousel__bullet';
-      btn.setAttribute('aria-label', `Ir para o slide ${i + 1}`);
-      btn.dataset.index = i;
-      btn.addEventListener('click', () => {
-        goToSlide(i);
-      });
-      pagination.appendChild(btn);
-    });
-    highlightBullet();
-  }
+prev.addEventListener('click', () => {
+  stopAutoPlay();
+  prevSlideFunc();
+  startAutoPlay();
+});
 
-  function highlightBullet() {
-    if (!pagination) return;
-    const bullets = Array.from(pagination.children);
-    bullets.forEach(b => b.removeAttribute('aria-current'));
-    const current = pagination.children[index];
-    if (current) current.setAttribute('aria-current', 'true');
-  }
-
-  // ---------- pointer handlers (touch + mouse) ----------
-  function pointerDown(clientX) {
-    isDragging = true;
-    startX = clientX;
-    setTransition(false);
-  }
-
-  function pointerMove(clientX) {
-    if (!isDragging) return;
-    const diff = clientX - startX;
-    currentTranslate = prevTranslate + diff;
-    setTranslate(currentTranslate);
-  }
-
-  function pointerUp() {
-    if (!isDragging) return;
-    isDragging = false;
-    const moved = currentTranslate - prevTranslate;
-
-    if (moved < -threshold && index < slides.length - 1) index++;
-    if (moved > threshold && index > 0) index--;
-
-    prevTranslate = -index * slideWidth;
-    setTransition(true);
-    setTranslate(prevTranslate);
-    updateButtons();
-    highlightBullet();
-  }
-
-  // touch events
-  track.addEventListener('touchstart', (e) => {
-    if (e.touches.length > 1) return;
-    pointerDown(e.touches[0].clientX);
-  }, { passive: true });
-
-  track.addEventListener('touchmove', (e) => {
-    if (e.touches.length > 1) return;
-    pointerMove(e.touches[0].clientX);
-  }, { passive: true });
-
-  track.addEventListener('touchend', () => {
-    pointerUp();
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    stopAutoPlay();
+    showSlide(i);
+    startAutoPlay();
   });
+});
+// Iniciar
+showSlide(index);
+startAutoPlay();
 
-  track.addEventListener('touchcancel', () => {
-    pointerUp();
-  });
 
-  // mouse events
-  track.addEventListener('mousedown', (e) => {
-    e.preventDefault();
-    pointerDown(e.clientX);
-  });
+const whatsappBtn = document.querySelector('.whatsapp-btn');
+const whatsappChat = document.querySelector('.whatsapp-chat');
 
-  window.addEventListener('mousemove', (e) => {
-    pointerMove(e.clientX);
-  });
-
-  window.addEventListener('mouseup', () => {
-    pointerUp();
-  });
-
-  // botões prev/next
-  if (btnPrev) btnPrev.addEventListener('click', prevSlide);
-  if (btnNext) btnNext.addEventListener('click', nextSlide);
-
-  // keyboard support (opcional)
-  carousel.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') prevSlide();
-    if (e.key === 'ArrowRight') nextSlide();
-  });
-
-  // tratar resize
-  window.addEventListener('resize', () => {
-    window.requestAnimationFrame(updateSize);
-  });
-
-  // impedir clique arrastando (evita selecionar imagens)
-  slides.forEach(img => {
-    img.addEventListener('dragstart', (e) => e.preventDefault());
-  });
-
-  // inicialização
-  createPagination();
-  updateSize();
-})();
+whatsappBtn.addEventListener('click', () => {
+  whatsappChat.classList.toggle('show');
+});

@@ -90,6 +90,7 @@
 .caixa{
  text-align: center;
  margin: 1.8em 2em;    
+ background-color: rgb(238, 238, 238);
 }
 
 
@@ -149,6 +150,31 @@
   }
 }
 
-@media screen and (min-width: 1728px){
+@media screen and (min-width: 1400px){
+  .logo__big {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+  }
  
+
+  .caixa{
+    text-align: center;
+    margin: 1.8em 9em;  
+      
+  }
+
+  .caixa__titulo{
+    font-size: 36px;
+  }
+
+  .caixa__texto{
+    font-size: 18px;
+  }
+
+  .caixa__imagem{
+    width: 20%;
+  }
+
+
 }

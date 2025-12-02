@@ -1,6 +1,7 @@
 .procura{
  text-align: center;
- margin: 1.8em 2em;   
+ margin: 1.8em 2em;  
+
 }
 
 
@@ -68,11 +69,41 @@
     font-size: 18px;
 }
 
+  .icones__lista{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 2em;
+    padding: 6em ;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .icones__item{
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 6em;
+    border-radius: 8px;
+    width: 80%; /* ocupa o espaço da coluna */
+    max-width: 200px;
+    padding: 2em 1em
+
+  }
+
+.icones__item img{
+  width: 80px;
+  height: 80px;
+}
+
+}
+
+
+@media screen and (min-width: 1024px){
 .icones__lista{
   display: grid;
   grid-template-columns: repeat(3, 2fr); 
-  gap: 5em;
+  gap: 2em;
   padding: 6em ;
+  margin: auto;
   justify-items: center;
 }
 
@@ -87,9 +118,35 @@
 
 }
 
-.icones__item img{
-  width: 80px;
-  height: 80px;
+
+  
 }
 
+
+
+
+
+@media screen and (min-width: 1400px){
+.icones__lista{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); 
+  gap: 2em;
+  padding: 6em ;
+  margin: auto;
+  justify-items: center;
+}
+
+.icones__item{
+   background-color: var(--azul);
+  color: var(--branco);
+  padding: 6em;
+  border-radius: 8px;
+  width: 50%; /* ocupa o espaço da coluna */
+  max-width: 200px;
+  padding: 2em 1em
+
+}
+
+
+  
 }

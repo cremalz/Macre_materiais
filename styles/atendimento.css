@@ -27,7 +27,7 @@
     font-family: var(--fonte-titulo);
     color: var(--branco);
     background-color: var(--laranja);
-    margin: 2em 5em;
+    margin: 2em 1em;
     padding: 0.5em;
     border-radius: 16px;
 }

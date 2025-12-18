@@ -1,88 +1,69 @@
-.local{
-    text-align: center;
- margin: 1.8em 2em;  
+.local {
+  text-align: center;
+  margin: 1.8em 2em;
 }
 
-
-.local__total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+.local__total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
 }
 
-.local__titulo{
-    font-family: var(--fonte-titulo);
-    color: var(--azul);
-    font-size: 20px;
-    font-weight: 300;
-    
- 
+.local__titulo {
+  font-family: var(--fonte-titulo);
+  color: var(--azul);
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.local__texto{
+.local__texto {
   font-family: var(--fonte-padrao);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0.5em;
-    text-align: center;
-
-    
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0.5em;
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
 .mapa-wrapper {
-    display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  width: 100%;
 }
 
 .mapa-container {
-    width: 90%;        /* largura controlada — pode ajustar */
-    max-width: 400px;  /* deixa o mapa menor e centralizado */
-    height: 90px;
-    border-radius: 19px;
-    overflow: hidden;
+  width: 90%; /* largura controlada — pode ajustar */
+  max-width: 400px; /* deixa o mapa menor e centralizado */
+  height: 90px;
+  border-radius: 19px;
+  overflow: hidden;
 }
 
 .mapa-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-
-
-
-@media screen and (min-width: 1024px){
-
-.local{
+@media screen and (min-width: 1024px) {
+  .local {
     text-align: center;
- margin: 1.8em 9em;  
-}
+    margin: 1.8em 9em;
+  }
 
-.local__titulo{
+  .local__titulo {
     font-size: 36px;
-}
+  }
 
-.local__texto{
+  .local__texto {
     font-size: 18px;
-}
+  }
 
-.mapa-container {
+  .mapa-container {
     width: 90%;
     max-width: 600px;
     height: 300px;
     border-radius: 19px;
     overflow: hidden;
-}
-
+  }
 }

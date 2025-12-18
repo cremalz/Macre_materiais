@@ -1,28 +1,25 @@
 .rodape {
-   background-color: #0F172A;
-    color: white;
-    padding: 20px;
-    margin-top: 2em;
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  margin-top: 2em;
 
-    display: flex;
-    flex-direction: column; /* mobile first */
-    align-items: flex-start  /* logo para direita */
-    
+  display: flex;
+  flex-direction: column; /* mobile first */
+  align-items: flex-start; /* logo para direita */
 }
 
-
-.rodape__logo{
- width: 150px;
+.rodape__logo {
+  width: 150px;
 }
- 
-.rodape-container{
+
+.rodape-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
   gap: 20px;
 }
-
 
 .rodape-box {
   flex: 1 1 250px;
@@ -35,12 +32,11 @@
   color: var(--c2);
 }
 
-.rodape-box__texto{
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--branco);
+.rodape-box__texto {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--branco);
 }
-
 
 .redes-sociais img {
   width: 40px;
@@ -52,56 +48,51 @@
   transform: scale(1.2);
 }
 
-.rodape__dev{
-    display: flex;
-    align-items: center;
- 
+.rodape__dev {
+  display: flex;
+  align-items: center;
 }
 
-
-
-.rodape__dev__ancora{
-    color: var(--branco);
-    text-decoration: none;
-    margin-left: 5px;
+.rodape__dev__ancora {
+  color: var(--branco);
+  text-decoration: none;
+  margin-left: 5px;
 }
 
-@media screen and (min-width: 1024px){
-
-.rodape {
+@media screen and (min-width: 1024px) {
+  .rodape {
     padding: 40px;
     margin-top: 2em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.rodape__logo{
-     width: 400px;
+  .rodape__logo {
+    width: 400px;
     margin-bottom: 30px;
-}
+  }
 
-.rodape-container{
+  .rodape-container {
     padding: 40px;
     gap: 40px;
-}
+  }
 
-.rodape-box h3 {
+  .rodape-box h3 {
     font-size: 24px;
     margin-bottom: 15px;
-}
+  }
 
-.rodape-box__texto{
+  .rodape-box__texto {
     font-size: 16px;
-}
+  }
 
-.redes-sociais img {
+  .redes-sociais img {
     width: 50px;
     height: 50px;
-}
+  }
 
-.rodape__dev__ancora{
+  .rodape__dev__ancora {
     margin-left: 10px;
-}
-
+  }
 }

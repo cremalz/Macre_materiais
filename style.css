@@ -6,35 +6,28 @@
 @import url("styles/rodape.css");
 @import url("styles/chat.css");
 
-
-
-:root{
-     --c1: #f89c1c;
-    --cor-de-fundo: #EBECEE;
-    --branco: #F3F3F3;
-    --laranja: #EB891B;
-    --laranja-escuro: #c77619;
-    --azul: #536580;
-    --azul-escuro:#0F172A;
-    --fonte-titulo: 'Belanosima', sans-serif;
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-
-
-    
+:root {
+  --c1: #f89c1c;
+  --cor-de-fundo: #ebecee;
+  --branco: #f3f3f3;
+  --laranja: #eb891b;
+  --laranja-escuro: #c77619;
+  --azul: #536580;
+  --azul-escuro: #0f172a;
+  --fonte-titulo: "Belanosima", sans-serif;
+  --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: var(--branco);
-    font-family:var(--fonte-padrao);
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
+body {
+  background-color: var(--branco);
+  font-family: var(--fonte-padrao);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.cor__back{
- text-align: center;
- margin: 1.8em 2em;    
- background-color: rgb(238, 238, 238);
+.cor__back {
+  text-align: center;
+  margin: 1.8em 2em;
+  background-color: rgb(238, 238, 238);
 }
-
-

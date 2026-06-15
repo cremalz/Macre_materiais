@@ -14,14 +14,22 @@
     />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
-
+ 
   <body>
-
+ 
     <!-- ===== HEADER / TOPO ===== -->
     <header class="header">
       <div class="header__inner">
         <img src="img/logo macre.svg" alt="Logo Macre Materiais de Construção" class="header__logo" />
         <img src="img.big/logobig.svg" alt="Logo Macre Materiais de Construção" class="header__logo--big" />
+ 
+        <!-- Botão hambúrguer (visível só no mobile) -->
+        <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+ 
         <nav class="header__nav">
           <a href="#produtos">Produtos</a>
           <a href="#atendimento">Atendimento</a>
@@ -30,7 +38,7 @@
         </nav>
       </div>
     </header>
-
+ 
     <!-- ===== BANNER ===== -->
     <div class="carousel">
       <div class="slides">
@@ -42,7 +50,7 @@
       <button class="next">&#10095;</button>
       <div class="dots"></div>
     </div>
-
+ 
     <!-- ===== HERO FRASE ===== -->
     <section class="hero">
       <div class="hero__inner">
@@ -55,13 +63,13 @@
         <img src="img/casita.svg" alt="Ilustração de casa" class="hero__img" />
       </div>
     </section>
-
+ 
     <!-- ===== PRODUTOS ===== -->
     <section class="produtos" id="produtos">
       <div class="produtos__inner">
         <h2 class="section__titulo">O que você procura, a gente tem</h2>
         <p class="section__sub">Materiais de alta qualidade com as melhores marcas do mercado</p>
-
+ 
         <ul class="produtos__grid">
           <li class="produto__card">
             <img src="img/balde.svg" alt="Tintas" />
@@ -98,11 +106,11 @@
         </ul>
       </div>
     </section>
-
+ 
     <!-- ===== DIFERENCIAIS ===== -->
     <section class="diferenciais" id="atendimento">
       <div class="diferenciais__inner">
-
+ 
         <div class="diferencial__card">
           <img src="img/atendente.svg" alt="Atendimento" class="diferencial__img" />
           <div class="diferencial__text">
@@ -114,9 +122,9 @@
             </a>
           </div>
         </div>
-
+ 
         <div class="diferencial__divider"></div>
-
+ 
         <div class="diferencial__card">
           <img src="img/caminhao.svg" alt="Entregas" class="diferencial__img" />
           <div class="diferencial__text">
@@ -124,10 +132,10 @@
             <p>Entregas rápidas e seguras em toda a zona sul de Porto Alegre, com qualidade garantida.</p>
           </div>
         </div>
-
+ 
       </div>
     </section>
-
+ 
     <!-- ===== LOCALIZAÇÃO ===== -->
     <section class="local" id="local">
       <div class="local__inner">
@@ -149,12 +157,12 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- ===== FOOTER ===== -->
     <footer class="rodape">
       <div class="rodape__inner">
         <img src="img/logo macre.svg" alt="Logo Macre" class="rodape__logo" />
-
+ 
         <div class="rodape__cols">
           <div class="rodape__col">
             <h3>Horário de Funcionamento</h3>
@@ -170,13 +178,13 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="rodape__dev">
         <img src="img/lzcrema.svg" alt="Desenvolvedor" class="rodape__dev__img" />
         <p>desenvolvido por <a href="#" class="rodape__dev__link">Lzcrema</a></p>
       </div>
     </footer>
-
+ 
     <!-- ===== WIDGET WHATSAPP ===== -->
     <div class="whatsapp-widget">
       <button class="whatsapp-btn" aria-label="Abrir chat WhatsApp">
@@ -187,8 +195,10 @@
         <a href="https://wa.me/5551999134749" target="_blank" class="chat-btn">Abrir no WhatsApp</a>
       </div>
     </div>
-
+ 
     <script src="script/banner.js" defer></script>
     <script src="script/chat.js" defer></script>
+    <script src="script/menu.js" defer></script>
   </body>
 </html>
+ 

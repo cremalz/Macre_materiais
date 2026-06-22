@@ -72,7 +72,7 @@ As cores foram escolhidas para comunicar os valores da nova gestão da loja:
   </tr>
 </table>
 
-<img width="512" height="3290" alt="screencapture-macremateriais-br-2026-06-22-18_31_19"  />
+
 
 
 ---
